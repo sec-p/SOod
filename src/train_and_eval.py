@@ -65,9 +65,9 @@ if str(project_root) not in sys.path:
     sys.path.insert(0, str(project_root))
 
 import clip
-from src.utils import Logger, cls_acc
-from src.data_utils import get_train_transform, get_test_transform, load_class_negatives, setup_mcm_data_loaders, setup_mixed_data_loaders
-from src.model_utils import load_clip_model, build_model_config, build_modular_model_from_config, get_trainable_params, setup_optimizer_scheduler
+from utils import Logger, cls_acc
+from data_utils import get_train_transform, get_test_transform, load_class_negatives, setup_mcm_data_loaders, setup_mixed_data_loaders
+from model_utils import load_clip_model, build_model_config, build_modular_model_from_config, get_trainable_params, setup_optimizer_scheduler
 import math
 
 class TrainEvalOrchestrator:
