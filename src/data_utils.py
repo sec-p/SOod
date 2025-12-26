@@ -130,7 +130,7 @@ def get_subset_with_len(dataset, length, shuffle=False):
 
 def setup_mixed_data_loaders(root_path: str, batch_size: int, id_dataset: str = "ImageNet", 
                             shots: int = 16, use_full_data: bool = False, 
-                            num_ood_sumple: int = -1, logger=None) -> Tuple[Dict, Dict, List, Optional[Dict]]:
+                            num_ood_sumple: int = -1, logger=None, class_negatives_path: str = "") -> Tuple[Dict, Dict, List, Optional[Dict]]:
     """Setup mixed data loaders with FA-style training data and MCM-style test/OOD data."""
     train_transform = get_train_transform()
     test_transform = get_test_transform()
@@ -158,7 +158,7 @@ def setup_mixed_data_loaders(root_path: str, batch_size: int, id_dataset: str = 
                 classnames = id_dataset_obj.classnames
             
             # Load class negatives if available
-            class_negatives = load_class_negatives("", root_path, logger)
+            class_negatives = load_class_negatives(class_negatives_path, root_path, logger)
             if class_negatives and logger:
                 logger.log(f"Loaded class negatives for {len(class_negatives)} classes")
             

@@ -65,9 +65,9 @@ if str(project_root) not in sys.path:
     sys.path.insert(0, str(project_root))
 
 import clip
-from utils import Logger, cls_acc
-from data_utils import get_train_transform, get_test_transform, load_class_negatives, setup_mcm_data_loaders, setup_mixed_data_loaders
-from model_utils import load_clip_model, build_model_config, build_modular_model_from_config, get_trainable_params, setup_optimizer_scheduler
+from .utils import Logger, cls_acc
+from .data_utils import get_train_transform, get_test_transform, load_class_negatives, setup_mcm_data_loaders, setup_mixed_data_loaders
+from .model_utils import load_clip_model, build_model_config, build_modular_model_from_config, get_trainable_params, setup_optimizer_scheduler
 import math
 
 class TrainEvalOrchestrator:
@@ -125,6 +125,7 @@ class TrainEvalOrchestrator:
         self.num_select = num_select
         self.backbone = backbone
         self.class_negatives_path = class_negatives_path
+        self.class_negatives = None  # Initialize class_negatives to None
         
         # Advanced settings
         self.selector_temperature = selector_temperature
@@ -205,7 +206,8 @@ class TrainEvalOrchestrator:
             shots=self.shots,
             use_full_data=self.use_full_data,
             num_ood_sumple=self.num_ood_sumple,
-            logger=self.logger
+            logger=self.logger,
+            class_negatives_path=self.class_negatives_path
         )
         
         # Extract loaders

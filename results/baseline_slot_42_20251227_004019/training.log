@@ -1,0 +1,7 @@
+
+================================================================================
+Starting training: baseline (seed=42)
+================================================================================
+
+Setting up data...
+Using mixed data loading: FA for training, MCM for testing/OOD
