@@ -1,0 +1,9 @@
+
+================================================================================
+Starting training: all_selectors_fuser_self_attn (seed=42)
+================================================================================
+
+Setting up data...
+Using mixed data loading: FA for training, MCM for testing/OOD
+✓ Loaded 1000 class names from /root/SOod/src/../data/ImageNet/imagenet_class_clean.npy
+⚠ FA's data loader not available, using MCM's ImageFolder implementation

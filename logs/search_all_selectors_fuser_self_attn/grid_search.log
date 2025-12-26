@@ -1,0 +1,602 @@
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 68, in <module>
+    from src.utils import Logger, cls_acc
+ModuleNotFoundError: No module named 'src.utils'
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 68, in <module>
+    from src.utils import Logger, cls_acc
+ModuleNotFoundError: No module named 'src.utils'
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 68, in <module>
+    from src.utils import Logger, cls_acc
+ModuleNotFoundError: No module named 'src.utils'
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 68, in <module>
+    from src.utils import Logger, cls_acc
+ModuleNotFoundError: No module named 'src.utils'
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 68, in <module>
+    from src.utils import Logger, cls_acc
+ModuleNotFoundError: No module named 'src.utils'
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 68, in <module>
+    from src.utils import Logger, cls_acc
+ModuleNotFoundError: No module named 'src.utils'
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 68, in <module>
+    from utils import Logger, cls_acc
+ImportError: cannot import name 'Logger' from 'utils' (unknown location)
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 68, in <module>
+    from utils import Logger, cls_acc
+ImportError: cannot import name 'Logger' from 'utils' (unknown location)
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 68, in <module>
+    from utils import Logger, cls_acc
+ImportError: cannot import name 'Logger' from 'utils' (unknown location)
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 68, in <module>
+    from utils import Logger, cls_acc
+ImportError: cannot import name 'Logger' from 'utils' (unknown location)
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 68, in <module>
+    from utils import Logger, cls_acc
+ImportError: cannot import name 'Logger' from 'utils' (unknown location)
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 68, in <module>
+    from utils import Logger, cls_acc
+ImportError: cannot import name 'Logger' from 'utils' (unknown location)
+/root/SOod/src/model_modular.py:172: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:374: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:408: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:422: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+
+================================================================================
+Starting training: all_selectors_fuser_self_attn (seed=42)
+================================================================================
+
+Setting up data...
+Using mixed data loading: FA for training, MCM for testing/OOD
+✓ Loaded 1000 class names from /root/SOod/src/../data/ImageNet/imagenet_class_clean.npy
+⚠ FA's data loader not available, using MCM's ImageFolder implementation
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 842, in <module>
+    main()
+  File "/root/SOod/src/train_and_eval.py", line 838, in main
+    trainer.train_with_eval()
+  File "/root/SOod/src/train_and_eval.py", line 699, in train_with_eval
+    self.setup_data()
+  File "/root/SOod/src/train_and_eval.py", line 201, in setup_data
+    data_loaders, ood_loaders, classnames, class_negatives = setup_mixed_data_loaders(
+  File "/root/SOod/src/data_utils.py", line 205, in setup_mixed_data_loaders
+    train_dataset = datasets.ImageFolder(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 328, in __init__
+    super().__init__(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 149, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 234, in find_classes
+    return find_classes(directory)
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 41, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [Errno 2] No such file or directory: 'f:/shixi/ailab/ood/FA/my_dataset/ImageNet'
+/root/SOod/src/model_modular.py:172: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:374: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:408: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:422: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+
+================================================================================
+Starting training: all_selectors_fuser_self_attn (seed=42)
+================================================================================
+
+Setting up data...
+Using mixed data loading: FA for training, MCM for testing/OOD
+✓ Loaded 1000 class names from /root/SOod/src/../data/ImageNet/imagenet_class_clean.npy
+⚠ FA's data loader not available, using MCM's ImageFolder implementation
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 842, in <module>
+    main()
+  File "/root/SOod/src/train_and_eval.py", line 838, in main
+    trainer.train_with_eval()
+  File "/root/SOod/src/train_and_eval.py", line 699, in train_with_eval
+    self.setup_data()
+  File "/root/SOod/src/train_and_eval.py", line 201, in setup_data
+    data_loaders, ood_loaders, classnames, class_negatives = setup_mixed_data_loaders(
+  File "/root/SOod/src/data_utils.py", line 205, in setup_mixed_data_loaders
+    train_dataset = datasets.ImageFolder(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 328, in __init__
+    super().__init__(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 149, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 234, in find_classes
+    return find_classes(directory)
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 41, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [Errno 2] No such file or directory: 'f:/shixi/ailab/ood/FA/my_dataset/ImageNet'
+/root/SOod/src/model_modular.py:172: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:374: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:408: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:422: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+
+================================================================================
+Starting training: all_selectors_fuser_self_attn (seed=42)
+================================================================================
+
+Setting up data...
+Using mixed data loading: FA for training, MCM for testing/OOD
+✓ Loaded 1000 class names from /root/SOod/src/../data/ImageNet/imagenet_class_clean.npy
+⚠ FA's data loader not available, using MCM's ImageFolder implementation
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 842, in <module>
+    main()
+  File "/root/SOod/src/train_and_eval.py", line 838, in main
+    trainer.train_with_eval()
+  File "/root/SOod/src/train_and_eval.py", line 699, in train_with_eval
+    self.setup_data()
+  File "/root/SOod/src/train_and_eval.py", line 201, in setup_data
+    data_loaders, ood_loaders, classnames, class_negatives = setup_mixed_data_loaders(
+  File "/root/SOod/src/data_utils.py", line 205, in setup_mixed_data_loaders
+    train_dataset = datasets.ImageFolder(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 328, in __init__
+    super().__init__(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 149, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 234, in find_classes
+    return find_classes(directory)
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 41, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [Errno 2] No such file or directory: 'root/autodl-tmp/ImageNet'
+/root/SOod/src/model_modular.py:172: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:374: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:408: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:422: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+
+================================================================================
+Starting training: all_selectors_fuser_self_attn (seed=42)
+================================================================================
+
+Setting up data...
+Using mixed data loading: FA for training, MCM for testing/OOD
+✓ Loaded 1000 class names from /root/SOod/src/../data/ImageNet/imagenet_class_clean.npy
+⚠ FA's data loader not available, using MCM's ImageFolder implementation
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 842, in <module>
+    main()
+  File "/root/SOod/src/train_and_eval.py", line 838, in main
+    trainer.train_with_eval()
+  File "/root/SOod/src/train_and_eval.py", line 699, in train_with_eval
+    self.setup_data()
+  File "/root/SOod/src/train_and_eval.py", line 201, in setup_data
+    data_loaders, ood_loaders, classnames, class_negatives = setup_mixed_data_loaders(
+  File "/root/SOod/src/data_utils.py", line 205, in setup_mixed_data_loaders
+    train_dataset = datasets.ImageFolder(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 328, in __init__
+    super().__init__(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 149, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 234, in find_classes
+    return find_classes(directory)
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 41, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [Errno 2] No such file or directory: 'root/autodl-tmp/ImageNet'
+/root/SOod/src/model_modular.py:172: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:374: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:408: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:422: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+
+================================================================================
+Starting training: all_selectors_fuser_self_attn (seed=42)
+================================================================================
+
+Setting up data...
+Using mixed data loading: FA for training, MCM for testing/OOD
+✓ Loaded 1000 class names from /root/SOod/src/../data/ImageNet/imagenet_class_clean.npy
+⚠ FA's data loader not available, using MCM's ImageFolder implementation
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 842, in <module>
+    main()
+  File "/root/SOod/src/train_and_eval.py", line 838, in main
+    trainer.train_with_eval()
+  File "/root/SOod/src/train_and_eval.py", line 699, in train_with_eval
+    self.setup_data()
+  File "/root/SOod/src/train_and_eval.py", line 201, in setup_data
+    data_loaders, ood_loaders, classnames, class_negatives = setup_mixed_data_loaders(
+  File "/root/SOod/src/data_utils.py", line 205, in setup_mixed_data_loaders
+    train_dataset = datasets.ImageFolder(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 328, in __init__
+    super().__init__(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 149, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 234, in find_classes
+    return find_classes(directory)
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 41, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [Errno 2] No such file or directory: '/root/autodl-tmp/ImageNet'
+/root/SOod/src/model_modular.py:172: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:374: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:408: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:422: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+
+================================================================================
+Starting training: all_selectors_fuser_self_attn (seed=42)
+================================================================================
+
+Setting up data...
+Using mixed data loading: FA for training, MCM for testing/OOD
+✓ Loaded 1000 class names from /root/SOod/src/../data/ImageNet/imagenet_class_clean.npy
+⚠ FA's data loader not available, using MCM's ImageFolder implementation
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 842, in <module>
+    main()
+  File "/root/SOod/src/train_and_eval.py", line 838, in main
+    trainer.train_with_eval()
+  File "/root/SOod/src/train_and_eval.py", line 699, in train_with_eval
+    self.setup_data()
+  File "/root/SOod/src/train_and_eval.py", line 201, in setup_data
+    data_loaders, ood_loaders, classnames, class_negatives = setup_mixed_data_loaders(
+  File "/root/SOod/src/data_utils.py", line 205, in setup_mixed_data_loaders
+    train_dataset = datasets.ImageFolder(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 328, in __init__
+    super().__init__(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 149, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 234, in find_classes
+    return find_classes(directory)
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 41, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [Errno 2] No such file or directory: '/root/autodl-tmp/ImageNet'
+/root/SOod/src/model_modular.py:172: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:374: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:408: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:422: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+
+================================================================================
+Starting training: all_selectors_fuser_self_attn (seed=42)
+================================================================================
+
+Setting up data...
+Using mixed data loading: FA for training, MCM for testing/OOD
+✓ Loaded 1000 class names from /root/SOod/src/../data/ImageNet/imagenet_class_clean.npy
+⚠ FA's data loader not available, using MCM's ImageFolder implementation
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 842, in <module>
+    main()
+  File "/root/SOod/src/train_and_eval.py", line 838, in main
+    trainer.train_with_eval()
+  File "/root/SOod/src/train_and_eval.py", line 699, in train_with_eval
+    self.setup_data()
+  File "/root/SOod/src/train_and_eval.py", line 201, in setup_data
+    data_loaders, ood_loaders, classnames, class_negatives = setup_mixed_data_loaders(
+  File "/root/SOod/src/data_utils.py", line 205, in setup_mixed_data_loaders
+    train_dataset = datasets.ImageFolder(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 328, in __init__
+    super().__init__(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 150, in __init__
+    samples = self.make_dataset(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 203, in make_dataset
+    return make_dataset(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 104, in make_dataset
+    raise FileNotFoundError(msg)
+FileNotFoundError: Found no valid file for the classes .ipynb_checkpoints. Supported extensions are: .jpg, .jpeg, .png, .ppm, .bmp, .pgm, .tif, .tiff, .webp
+/root/SOod/src/model_modular.py:172: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:374: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:408: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:422: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:172: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:374: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:408: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:422: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+
+================================================================================
+Starting training: all_selectors_fuser_self_attn (seed=42)
+================================================================================
+
+Setting up data...
+Using mixed data loading: FA for training, MCM for testing/OOD
+✓ Loaded 1000 class names from /root/SOod/src/../data/ImageNet/imagenet_class_clean.npy
+⚠ FA's data loader not available, using MCM's ImageFolder implementation
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 842, in <module>
+    main()
+  File "/root/SOod/src/train_and_eval.py", line 838, in main
+    trainer.train_with_eval()
+  File "/root/SOod/src/train_and_eval.py", line 699, in train_with_eval
+    self.setup_data()
+  File "/root/SOod/src/train_and_eval.py", line 201, in setup_data
+    data_loaders, ood_loaders, classnames, class_negatives = setup_mixed_data_loaders(
+  File "/root/SOod/src/data_utils.py", line 205, in setup_mixed_data_loaders
+    train_dataset = datasets.ImageFolder(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 328, in __init__
+    super().__init__(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 149, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 234, in find_classes
+    return find_classes(directory)
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 41, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [Errno 2] No such file or directory: '/root/autodl-tmp/ImageNet/train'
+/root/SOod/src/model_modular.py:172: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:374: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:408: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:422: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+
+================================================================================
+Starting training: all_selectors_fuser_self_attn (seed=42)
+================================================================================
+
+Setting up data...
+Using mixed data loading: FA for training, MCM for testing/OOD
+✓ Loaded 1000 class names from /root/SOod/src/../data/ImageNet/imagenet_class_clean.npy
+⚠ FA's data loader not available, using MCM's ImageFolder implementation
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 842, in <module>
+    main()
+  File "/root/SOod/src/train_and_eval.py", line 838, in main
+    trainer.train_with_eval()
+  File "/root/SOod/src/train_and_eval.py", line 699, in train_with_eval
+    self.setup_data()
+  File "/root/SOod/src/train_and_eval.py", line 201, in setup_data
+    data_loaders, ood_loaders, classnames, class_negatives = setup_mixed_data_loaders(
+  File "/root/SOod/src/data_utils.py", line 205, in setup_mixed_data_loaders
+    train_dataset = datasets.ImageFolder(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 328, in __init__
+    super().__init__(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 149, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 234, in find_classes
+    return find_classes(directory)
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 41, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [Errno 2] No such file or directory: '/root/autodl-tmp/ImageNet/train'
+/root/SOod/src/model_modular.py:172: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:374: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:408: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:422: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+
+================================================================================
+Starting training: all_selectors_fuser_self_attn (seed=42)
+================================================================================
+
+Setting up data...
+Using mixed data loading: FA for training, MCM for testing/OOD
+✓ Loaded 1000 class names from /root/SOod/src/../data/ImageNet/imagenet_class_clean.npy
+⚠ FA's data loader not available, using MCM's ImageFolder implementation
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 842, in <module>
+    main()
+  File "/root/SOod/src/train_and_eval.py", line 838, in main
+    trainer.train_with_eval()
+  File "/root/SOod/src/train_and_eval.py", line 699, in train_with_eval
+    self.setup_data()
+  File "/root/SOod/src/train_and_eval.py", line 201, in setup_data
+    data_loaders, ood_loaders, classnames, class_negatives = setup_mixed_data_loaders(
+  File "/root/SOod/src/data_utils.py", line 205, in setup_mixed_data_loaders
+    train_dataset = datasets.ImageFolder(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 328, in __init__
+    super().__init__(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 149, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 234, in find_classes
+    return find_classes(directory)
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 41, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [Errno 2] No such file or directory: '/root/autodl-tmp/ImageNet/train'
+/root/SOod/src/model_modular.py:172: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:374: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:408: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:422: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+
+================================================================================
+Starting training: all_selectors_fuser_self_attn (seed=42)
+================================================================================
+
+Setting up data...
+Using mixed data loading: FA for training, MCM for testing/OOD
+✓ Loaded 1000 class names from /root/SOod/src/../data/ImageNet/imagenet_class_clean.npy
+⚠ FA's data loader not available, using MCM's ImageFolder implementation
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 842, in <module>
+    main()
+  File "/root/SOod/src/train_and_eval.py", line 838, in main
+    trainer.train_with_eval()
+  File "/root/SOod/src/train_and_eval.py", line 699, in train_with_eval
+    self.setup_data()
+  File "/root/SOod/src/train_and_eval.py", line 201, in setup_data
+    data_loaders, ood_loaders, classnames, class_negatives = setup_mixed_data_loaders(
+  File "/root/SOod/src/data_utils.py", line 205, in setup_mixed_data_loaders
+    train_dataset = datasets.ImageFolder(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 328, in __init__
+    super().__init__(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 149, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 234, in find_classes
+    return find_classes(directory)
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 41, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [Errno 2] No such file or directory: '/root/autodl-tmp/ImageNet/train'
+/root/SOod/src/model_modular.py:172: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:374: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:408: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:422: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+
+================================================================================
+Starting training: all_selectors_fuser_self_attn (seed=42)
+================================================================================
+
+Setting up data...
+Using mixed data loading: FA for training, MCM for testing/OOD
+✓ Loaded 1000 class names from /root/SOod/src/../data/ImageNet/imagenet_class_clean.npy
+⚠ FA's data loader not available, using MCM's ImageFolder implementation
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 842, in <module>
+    main()
+  File "/root/SOod/src/train_and_eval.py", line 838, in main
+    trainer.train_with_eval()
+  File "/root/SOod/src/train_and_eval.py", line 699, in train_with_eval
+    self.setup_data()
+  File "/root/SOod/src/train_and_eval.py", line 201, in setup_data
+    data_loaders, ood_loaders, classnames, class_negatives = setup_mixed_data_loaders(
+  File "/root/SOod/src/data_utils.py", line 205, in setup_mixed_data_loaders
+    train_dataset = datasets.ImageFolder(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 328, in __init__
+    super().__init__(
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 149, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 234, in find_classes
+    return find_classes(directory)
+  File "/root/miniconda3/envs/ood/lib/python3.10/site-packages/torchvision/datasets/folder.py", line 41, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [Errno 2] No such file or directory: '/root/autodl-tmp/ImageNet/train'
+/root/SOod/src/model_modular.py:172: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:374: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:408: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:422: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+
+================================================================================
+Starting training: all_selectors_fuser_self_attn (seed=42)
+================================================================================
+
+Setting up data...
+Using mixed data loading: FA for training, MCM for testing/OOD
+✓ Loaded 1000 class names from /root/SOod/src/../data/ImageNet/imagenet_class_clean.npy
+⚠ FA's data loader not available, using MCM's ImageFolder implementation
+  ✓ Loaded OOD dataset: iNaturalist
+  ✓ Loaded OOD dataset: SUN
+  ✓ Loaded OOD dataset: Places
+  ⚠ Failed to load OOD dataset Textures: [Errno 2] No such file or directory: '/root/autodl-tmp/Texture/images'
+Setting up model...
+Config: {
+  "device": "cuda",
+  "selector_type": "all",
+  "num_select": 40,
+  "fuser_type": "self_attn",
+  "lambda_llm_negatives": 0.5,
+  "lambda_mixup": 0.1,
+  "margin": 0.5,
+  "selector_temperature": 1.0,
+  "patches_per_slot_attn": 16,
+  "templates": [
+    "a photo of the {}."
+  ],
+  "use_redundancy_loss": true,
+  "use_llm_negatives": true,
+  "use_semantic_exclusion": true,
+  "use_mixup_invariance": true,
+  "lambda_redundancy": 0.1
+}
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 842, in <module>
+    main()
+  File "/root/SOod/src/train_and_eval.py", line 838, in main
+    trainer.train_with_eval()
+  File "/root/SOod/src/train_and_eval.py", line 700, in train_with_eval
+    self.setup_model()
+  File "/root/SOod/src/train_and_eval.py", line 253, in setup_model
+    class_negatives=self.class_negatives
+AttributeError: 'TrainEvalOrchestrator' object has no attribute 'class_negatives'. Did you mean: 'class_negatives_path'?
+/root/SOod/src/model_modular.py:172: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:374: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:408: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+/root/SOod/src/model_modular.py:422: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @autocast(enabled=False)
+
+================================================================================
+Starting training: all_selectors_fuser_self_attn (seed=42)
+================================================================================
+
+Setting up data...
+Using mixed data loading: FA for training, MCM for testing/OOD
+✓ Loaded 1000 class names from /root/SOod/src/../data/ImageNet/imagenet_class_clean.npy
+⚠ FA's data loader not available, using MCM's ImageFolder implementation
+  ✓ Loaded OOD dataset: iNaturalist
+  ✓ Loaded OOD dataset: SUN
+  ✓ Loaded OOD dataset: Places
+  ⚠ Failed to load OOD dataset Textures: [Errno 2] No such file or directory: '/root/autodl-tmp/Texture/images'
+Setting up model...
+Config: {
+  "device": "cuda",
+  "selector_type": "all",
+  "num_select": 40,
+  "fuser_type": "self_attn",
+  "lambda_llm_negatives": 0.5,
+  "lambda_mixup": 0.1,
+  "margin": 0.5,
+  "selector_temperature": 1.0,
+  "patches_per_slot_attn": 16,
+  "templates": [
+    "a photo of the {}."
+  ],
+  "use_redundancy_loss": true,
+  "use_llm_negatives": true,
+  "use_semantic_exclusion": true,
+  "use_mixup_invariance": true,
+  "lambda_redundancy": 0.1
+}
+Traceback (most recent call last):
+  File "/root/SOod/src/train_and_eval.py", line 842, in <module>
+    main()
+  File "/root/SOod/src/train_and_eval.py", line 838, in main
+    trainer.train_with_eval()
+  File "/root/SOod/src/train_and_eval.py", line 700, in train_with_eval
+    self.setup_model()
+  File "/root/SOod/src/train_and_eval.py", line 253, in setup_model
+    class_negatives=self.class_negatives
+AttributeError: 'TrainEvalOrchestrator' object has no attribute 'class_negatives'. Did you mean: 'class_negatives_path'?
